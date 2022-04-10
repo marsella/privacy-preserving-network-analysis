@@ -1,0 +1,98 @@
+import numpy as np
+
+# generates synthetic data
+# todo: find a way to read fix-points from file
+def initializeData():
+
+  #Self holdings
+  Sc = np.array([ np.random.rand() for _ in range(n) ])
+
+  # normalized cross-holdings
+  Cc = np.random.rand(n,n)
+  d = np.arange(n)
+  Cc[d,d] = 0 #Diagonals of cross-holding matrix are 0
+  Cc = Cc/Cc.sum(axis=0) #Normalize columns
+  Cc = Cc*(1 - Sc) #Column sums are 1-S[i,i]
+
+  #Underlying assets
+  Dc = np.random.rand(n) 
+
+  # DEBUG: compute in the clear
+  A = np.zeros((n,n))
+  for k in range(3):
+    A = np.matmul(Cc,A)
+    A = A + np.identity(n)
+  
+  AD = np.matmul(A, Dc)
+  SAD = Sc * AD
+  print_ln("clear values: %s",SAD)
+
+  
+  # convert to secure
+  S = [sfix(s) for s in Sc]
+  D = [sfix(d) for d in Dc]
+  C = [[sfix(c) for c in row] for row in Cc]
+  
+  return (S,C,D)
+
+
+def matmul(A,B, typ):
+  assert len(A[0]) == len(B)
+  result = [[typ(0) for _ in range(len(A))] for _ in range(len(B[0]))]
+
+  for i in range(len(A)):
+    for j in range(len(B[0])):
+      elt = typ(0)
+      for k in range(len(A[0])):
+        elt += A[i][k] * B[k][j]
+      result[i][j] = elt
+  return result
+
+def matvecmul(A,v, typ):
+  assert len(A[0]) == len(v)
+  result = [typ(0) for _ in range(len(A))]
+
+  for i in range(len(A)):
+    elt = typ(0)
+    for j in range(len(v)):
+      elt += A[i][j] * v[j]
+    result[i] = elt
+
+  return result
+
+
+def EGJ(S, C, D):
+  k = 3
+
+  res = [[sfix(0) for _ in range(n)] for _ in range(n)]
+  I = np.identity(n)
+  I = [[sfix(i) for i in row] for row in I]
+
+  # 1.find fixed point. For k iterations... 
+  for kk in range(k):
+    # ... compute A = C*A + I
+    A = res
+    res = matmul(C,A, sfix)
+    for i in range(n):
+      res[i][i] += sfix(1)
+  A = res
+
+  # 2. compute SAD
+  AD = matvecmul(A, D, sfix)
+  SAD = [s * ad for (s,ad) in zip(S,AD)]
+
+  rc = [r.reveal() for r in SAD]
+  print_ln("secure values: %s", rc)
+
+  return SAD
+
+
+#### MAIN ###
+n = int(3)
+
+# compute function
+S,C,D = initializeData()
+values = EGJ(S,C,D)
+
+# todo: check results
+

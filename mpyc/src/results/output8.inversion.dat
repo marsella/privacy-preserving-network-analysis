@@ -1,0 +1,36 @@
+2020-03-27 18:22:26,802 Start MPyC runtime v0.6
+2020-03-27 18:22:27,012 All 8 parties connected.
+running INVERSION algorithm
+Round  0 : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+Round  1 : [-299.0, 334.0, -103.0, -241.0, 36.0, -216.0, -349.0, -52.0]
+Round  2 : [-1348081224.0, -1275229769.0, -351480200.0, -463086288.0, -980084071.0, -1288432194.0, -1257629260.0, -895552074.0]
+Round  3 : [-467387685.0, -1148961226.0, -1587761250.0, -935127051.0, -441382111.0, -534012568.0, 110505481.0, -656208608.0]
+Round  4 : [351427689.0, -1144665493.0, -505025333.0, 254699364.0, -1073560265.0, -691295294.0, -4797254.0, 113960823.0]
+Round  5 : [-1563206425.0, -1358109725.0, -45581365.0, 274850065.0, -701962285.0, 76485154.0, -77049405.0, -1558544770.0]
+Round  6 : [59558943.0, 5159482.0, -1175890882.0, -1171889686.0, -429687983.0, -1435767465.0, 43871717.0, -1381119371.0]
+Round  7 : [-217359143.0, -803973276.0, -1469461660.0, -213020271.0, -980236338.0, -18027234.0, -1664051925.0, -70361301.0]
+final strategy:  [1.1596143816157295e+38, 1.5686807306364418e+38, 3.459461966264759e+37, 2.006135162595173e+38, 3.37857357003029e+37, 2.1949545279064206e+38, 1.6254060483560521e+38, 1.6595556950618738e+38]
+2020-03-27 18:22:42,431 Stop MPyC runtime -- elapsed time: 0:00:15.629055
+	Command being timed: "/usr/local/bin/python3 noe.py inversion 8 -M 8"
+	User time (seconds): 14.97
+	System time (seconds): 1.32
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:16.31
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 168564
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 125295
+	Voluntary context switches: 2491
+	Involuntary context switches: 347243
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

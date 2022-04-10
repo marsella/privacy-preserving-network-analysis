@@ -1,0 +1,76 @@
+Compiling program in Programs/noe
+noe
+p = 5316911983139663491615228241123082241
+Prime size: 120
+Default bit length: 64
+Default statistical security parameter: 40
+Under Over Flow flag:  True
+Compiling file Programs/noe/noe.mpc
+Compiling basic block noe-0--0
+Processing tape noe-0 with 1 blocks
+Processing basic block noe-0--0, 0/1, 71407 instructions
+Program has 2210 <class 'Compiler.instructions.startopen'> instructions
+Merging open instructions...
+Program requires 79 rounds of communication
+Program requires 4304 invocations
+Tape register usage: defaultdict(<function <lambda> at 0x7f25e9e9ecf8>, {'c': 10289, 'r': 0, 's': 67518})
+modp: 10289 clear, 67518 secret
+Re-allocating...
+Allocating noe-0--0, 0/1
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Compile offline data requirements...
+Tape requires 2094 triples in modp, 12698 bits in modp
+Tape requires prime bit length 123
+Program requires: {('modp', 'triple'): 2094, ('modp', 'bit'): 12698}
+Memory size: defaultdict(<function <lambda> at 0x7f25e9e9eaa0>, {'c': 8192, 'r': 8192, 's': 8240})
+Compiling basic block noe-0-memory-usage-1
+Memory of type 'c' of size 8192
+Memory of type 'r' of size 8192
+Memory of type 's' of size 8240
+Writing to Programs/noe/noe.sch
+Writing to Programs/noe/noe-0.bc
+Writing to Programs/noe/noe-0.bc
+	Command being timed: "/usr/bin/env python compile.py Programs/noe"
+	User time (seconds): 6.09
+	System time (seconds): 0.19
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:06.30
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 151536
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 65701
+	Voluntary context switches: 2
+	Involuntary context switches: 11
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1976
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

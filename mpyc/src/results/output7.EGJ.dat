@@ -1,0 +1,27 @@
+2020-03-27 18:22:02,913 Start MPyC runtime v0.6
+2020-03-27 18:22:03,223 All 7 parties connected.
+result: [0.37203571712598205, 1.0542587032541633, 0.07032520393840969, 1.0781370252370834, 0.525508945574984, 1.034901809412986, 0.47199701122008264]
+2020-03-27 18:22:07,402 Stop MPyC runtime -- elapsed time: 0:00:04.488724
+	Command being timed: "/usr/local/bin/python3 egj.py 7 -M 7"
+	User time (seconds): 4.62
+	System time (seconds): 0.89
+	Percent of CPU this job got: 107%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.15
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 143196
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 80098
+	Voluntary context switches: 484
+	Involuntary context switches: 238225
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

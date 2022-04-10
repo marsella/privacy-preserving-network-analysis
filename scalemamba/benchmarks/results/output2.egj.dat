@@ -1,0 +1,284 @@
+Compiling program in Programs/egj
+egj
+p = 5316911983139663491615228241123082241
+Prime size: 120
+Default bit length: 64
+Default statistical security parameter: 40
+Under Over Flow flag:  True
+Compiling file Programs/egj/egj.mpc
+Compiling basic block egj-0--0
+Processing tape egj-0 with 1 blocks
+Processing basic block egj-0--0, 0/1, 11817 instructions
+Merging open instructions...
+Program requires 11 rounds of communication
+Program requires 92 invocations
+Tape register usage: defaultdict(<function <lambda> at 0x7f0c150a3a50>, {'c': 394, 'r': 0, 's': 11634})
+modp: 394 clear, 11634 secret
+Re-allocating...
+Allocating egj-0--0, 0/1
+Register(s) [s0] never used, assigned by 'ldsi s0, 1048576' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 1048576' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Compile offline data requirements...
+Tape requires 30 triples in modp, 3660 bits in modp
+Tape requires prime bit length 123
+Program requires: {('modp', 'triple'): 30, ('modp', 'bit'): 3660}
+Memory size: defaultdict(<function <lambda> at 0x7f0c3e894e50>, {'c': 8192, 'r': 8192, 's': 8192})
+Compiling basic block egj-0-memory-usage-1
+Memory of type 'c' of size 8192
+Memory of type 'r' of size 8192
+Memory of type 's' of size 8192
+Writing to Programs/egj/egj.sch
+Writing to Programs/egj/egj-0.bc
+Writing to Programs/egj/egj-0.bc
+	Command being timed: "/usr/bin/python2 compile.py Programs/egj"
+	User time (seconds): 0.78
+	System time (seconds): 0.77
+	Percent of CPU this job got: 265%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.58
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 104732
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 24769
+	Voluntary context switches: 31
+	Involuntary context switches: 157102
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 328
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Compiling program in Programs/egj
+egj
+p = 5316911983139663491615228241123082241
+Prime size: 120
+Default bit length: 64
+Default statistical security parameter: 40
+Under Over Flow flag:  True
+Compiling file Programs/egj/egj.mpc
+Compiling basic block egj-0--0
+Processing tape egj-0 with 1 blocks
+Processing basic block egj-0--0, 0/1, 11817 instructions
+Merging open instructions...
+Program requires 11 rounds of communication
+Program requires 92 invocations
+Tape register usage: defaultdict(<function <lambda> at 0x7f0472eeda50>, {'c': 394, 'r': 0, 's': 11634})
+modp: 394 clear, 11634 secret
+Re-allocating...
+Allocating egj-0--0, 0/1
+Register(s) [s0] never used, assigned by 'ldsi s0, 1048576' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 1048576' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Compile offline data requirements...
+Tape requires 30 triples in modp, 3660 bits in modp
+Tape requires prime bit length 123
+Program requires: {('modp', 'triple'): 30, ('modp', 'bit'): 3660}
+Memory size: defaultdict(<function <lambda> at 0x7f049c6dee50>, {'c': 8192, 'r': 8192, 's': 8192})
+Compiling basic block egj-0-memory-usage-1
+Memory of type 'c' of size 8192
+Memory of type 'r' of size 8192
+Memory of type 's' of size 8192
+Writing to Programs/egj/egj.sch
+Writing to Programs/egj/egj-0.bc
+Writing to Programs/egj/egj-0.bc
+	Command being timed: "/usr/bin/python2 compile.py Programs/egj"
+	User time (seconds): 0.83
+	System time (seconds): 0.87
+	Percent of CPU this job got: 290%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.58
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 104832
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 24745
+	Voluntary context switches: 48
+	Involuntary context switches: 24
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 328
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Compiling program in Programs/egj
+egj
+p = 5316911983139663491615228241123082241
+Prime size: 120
+Default bit length: 64
+Default statistical security parameter: 40
+Under Over Flow flag:  True
+Compiling file Programs/egj/egj.mpc
+Compiling basic block egj-0--0
+Processing tape egj-0 with 1 blocks
+Processing basic block egj-0--0, 0/1, 11817 instructions
+Merging open instructions...
+Program requires 11 rounds of communication
+Program requires 92 invocations
+Tape register usage: defaultdict(<function <lambda> at 0x7f9610508a50>, {'c': 394, 'r': 0, 's': 11634})
+modp: 394 clear, 11634 secret
+Re-allocating...
+Allocating egj-0--0, 0/1
+Register(s) [s114] never used, assigned by 'ldsi s114, 1048576' in <omitted>
+Register(s) [s115] never used, assigned by 'ldsi s115, 0' in <omitted>
+Register(s) [s116] never used, assigned by 'ldsi s116, 0' in <omitted>
+Register(s) [s117] never used, assigned by 'ldsi s117, 1048576' in <omitted>
+Register(s) [s118] never used, assigned by 'ldsi s118, 0' in <omitted>
+Register(s) [s119] never used, assigned by 'ldsi s119, 0' in <omitted>
+Register(s) [s120] never used, assigned by 'ldsi s120, 0' in <omitted>
+Register(s) [s121] never used, assigned by 'ldsi s121, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Compile offline data requirements...
+Tape requires 30 triples in modp, 3660 bits in modp
+Tape requires prime bit length 123
+Program requires: {('modp', 'triple'): 30, ('modp', 'bit'): 3660}
+Memory size: defaultdict(<function <lambda> at 0x7f9639cf9e50>, {'c': 8192, 'r': 8192, 's': 8192})
+Compiling basic block egj-0-memory-usage-1
+Memory of type 'c' of size 8192
+Memory of type 'r' of size 8192
+Memory of type 's' of size 8192
+Writing to Programs/egj/egj.sch
+Writing to Programs/egj/egj-0.bc
+Writing to Programs/egj/egj-0.bc
+	Command being timed: "/usr/bin/python2 compile.py Programs/egj"
+	User time (seconds): 0.87
+	System time (seconds): 0.79
+	Percent of CPU this job got: 284%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.58
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 104920
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 24745
+	Voluntary context switches: 38
+	Involuntary context switches: 42790
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 336
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Compiling program in Programs/egj
+egj
+p = 5316911983139663491615228241123082241
+Prime size: 120
+Default bit length: 64
+Default statistical security parameter: 40
+Under Over Flow flag:  True
+Compiling file Programs/egj/egj.mpc
+Compiling basic block egj-0--0
+Processing tape egj-0 with 1 blocks
+Processing basic block egj-0--0, 0/1, 11817 instructions
+Merging open instructions...
+Program requires 11 rounds of communication
+Program requires 92 invocations
+Tape register usage: defaultdict(<function <lambda> at 0x7f46a43f5a50>, {'c': 394, 'r': 0, 's': 11634})
+modp: 394 clear, 11634 secret
+Re-allocating...
+Allocating egj-0--0, 0/1
+Register(s) [s0] never used, assigned by 'ldsi s0, 1048576' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 1048576' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Compile offline data requirements...
+Tape requires 30 triples in modp, 3660 bits in modp
+Tape requires prime bit length 123
+Program requires: {('modp', 'triple'): 30, ('modp', 'bit'): 3660}
+Memory size: defaultdict(<function <lambda> at 0x7f46cdbe6e50>, {'c': 8192, 'r': 8192, 's': 8192})
+Compiling basic block egj-0-memory-usage-1
+Memory of type 'c' of size 8192
+Memory of type 'r' of size 8192
+Memory of type 's' of size 8192
+Writing to Programs/egj/egj.sch
+Writing to Programs/egj/egj-0.bc
+Writing to Programs/egj/egj-0.bc
+	Command being timed: "/usr/bin/python2 compile.py Programs/egj"
+	User time (seconds): 0.80
+	System time (seconds): 0.83
+	Percent of CPU this job got: 280%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.58
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 104748
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 24738
+	Voluntary context switches: 44
+	Involuntary context switches: 78426
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 328
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,142 @@
+
+# consumes data produced by geninput.py
+# expected format is whitespace-separated:
+# reserves total-debt debt-to-0 debt-to-1 ...
+# todo: find a way to read fixe-point so we don't have to calculate it securely
+def initializeData(individual_debts, total_debts,reserves,proportions,defaults,payment_strategy):
+
+  for i in range(NUM_BANKS):
+    reserves[i] = sint.get_private_input_from(i)
+    
+    defaults[i] = sint(0)
+    total_debts[i] = sint.get_private_input_from(i)
+
+    td = sfix.load_sint(total_debts[i])
+    payment_strategy[i] = td
+    for j in range(NUM_BANKS):
+      individual_debts[i][j] = sint.get_private_input_from(i)
+      proportions[i][j] = sfix.load_sint(individual_debts[i][j]) / td
+
+# reads in all data from party 0
+# expected format from geninput.py with ONEPARTYINPUT = True
+# more loops because its ordered by data type, not by party
+def initializeSharedData(individual_debts, total_debts,reserves,proportions,defaults,payment_strategy):
+
+    COMP_PARTIES = 3
+    # initialize everything to 0
+    for i in range(NUM_BANKS): 
+      reserves[i] = sint(0)
+      defaults[i] = sint(0)
+      total_debts[i] = sint(0)
+      for j in range(NUM_BANKS):
+        individual_debts[i][j] = sint(0)
+
+
+    # add in the values from parties
+    # note that this could have fewer loops if rearranged output generation or fixed input reading
+    for i in range(NUM_BANKS):
+      for pty in range(COMP_PARTIES):
+        reserves[i] += sint.get_private_input_from(pty)
+
+    for i in range(NUM_BANKS):
+      for pty in range(COMP_PARTIES):
+        total_debts[i] += sint.get_private_input_from(pty)
+
+    for i in range(NUM_BANKS):
+      for j in range(NUM_BANKS):
+        for pty in range(COMP_PARTIES):
+          individual_debts[i][j] += sint.get_private_input_from(pty)
+
+    # set initial values dependent on input
+    for i in range(NUM_BANKS):
+      td = sfix.load_sint(total_debts[i])
+      payment_strategy[i] = td
+      for j in range(NUM_BANKS):
+        proportions[i][j] = sfix.load_sint(individual_debts[i][j]) / td
+
+
+  
+
+# implements Algorithm 2 in main.pdf
+def findFix(A,b,payment_strategy):
+  # k shouldn't really have an upper bound but we need to put something in.
+  new_strategy = sfix.Array(NUM_BANKS)
+  for k in range(NUM_BANKS):
+    for i in range(NUM_BANKS):
+      new_strategy[i] = b[i]
+      for j in range(NUM_BANKS):
+        new_strategy[i] += A[i][j] * payment_strategy[j]
+    payment_strategy = new_strategy
+  return new_strategy 
+
+
+# Implements Algorithm 1 in main.pdf
+def iterativeFailures(individual_debts, total_debts,reserves,proportions,defaults,payment_strategy):
+
+  for k in range(NUM_BANKS):
+    A = sfix.Matrix(NUM_BANKS, NUM_BANKS)
+    b = sfix.Array(NUM_BANKS)
+
+    nondefault_totals = sfix.Array(NUM_BANKS) # (I-Lambda)*p_bar
+    default_reserves = sfix.Array(NUM_BANKS) # Lambda*e
+    failure_payouts = sfix.Matrix(NUM_BANKS, NUM_BANKS) # Lambda*Pi^T
+    for i in range(NUM_BANKS):
+      nondefault_totals[i] = sfix.load_sint((sint(1) - defaults[i]) * total_debts[i])
+      default_reserves[i] = sfix.load_sint(defaults[i] * reserves[i])
+
+      for j in range(NUM_BANKS):
+        # innerproduct of diagonal matrix defaults[i][-] 
+        # and proportions[j][-] (eg transpose(proportions)[-][j])
+        failure_payouts[i][j] = defaults[i] * proportions[j][i]
+        A[i][j] = failure_payouts[i][j] * defaults[j]
+
+    for i in range(NUM_BANKS):
+      b[i] = default_reserves[i] + nondefault_totals[i]
+      for j in range(NUM_BANKS):
+        b[i] += failure_payouts[i][j] * nondefault_totals[j]
+
+    # find equilibrium and update defaulters
+    payment_strategy = findFix(A,b,payment_strategy)
+    for i in range(NUM_BANKS):
+      actual_credits = reserves[i]
+      for j in range(NUM_BANKS):
+        actual_credits += proportions[j][i] * payment_strategy[j]
+
+      defaults[i] = actual_credits < sfix.load_sint(total_debts[i])
+
+  return payment_strategy
+
+
+NUM_BANKS = int(3)
+# this uses arrays for individual element access
+
+individual_debts = Matrix(NUM_BANKS, NUM_BANKS, sint)
+total_debts      = Array(NUM_BANKS, sint)
+reserves         = Array(NUM_BANKS, sint)
+
+proportions      = sfix.Matrix(NUM_BANKS, NUM_BANKS)
+
+# updated
+defaults         = Array(NUM_BANKS, sint)
+payment_strategy = sfix.Array(NUM_BANKS)
+
+# compute function
+initializeData(individual_debts, total_debts,reserves,proportions,defaults,payment_strategy)
+#initializeSharedData(individual_debts, total_debts,reserves,proportions,defaults,payment_strategy)
+for r in reserves:
+  print_ln("ri: %s", r.reveal())
+
+payment_strategy = iterativeFailures(individual_debts, total_debts,reserves,proportions,defaults,payment_strategy)
+
+# check results
+num_failed = sint(0)
+shortfall = sfix(0)
+for i in range(NUM_BANKS):
+  debt = sfix.load_sint(total_debts[i])
+  x = payment_strategy[i] < debt
+  print_ln("bank[%s] failed? %s (debt %s\tpayment %s)", i, x.reveal(),debt.reveal(),payment_strategy[i].reveal())
+  num_failed += x
+  shortfall += x * (debt - payment_strategy[i])
+
+print_ln("Failed banks: %s", num_failed.reveal())
+print_ln("Shortfall: %s", shortfall.reveal())

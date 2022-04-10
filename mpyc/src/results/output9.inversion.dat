@@ -1,0 +1,37 @@
+2020-03-27 18:23:57,770 Start MPyC runtime v0.6
+2020-03-27 18:23:57,980 All 9 parties connected.
+running INVERSION algorithm
+Round  0 : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+Round  1 : [-9701376.0, 11191168.0, -3256576.0, -7914752.0, 1150208.0, -7012992.0, -11204096.0, -1723904.0, 3262336.0]
+Round  2 : [154839089.0, 535907567.0, -909902876.0, 463270474.0, 451191617.0, 226003378.0, -164583685.0, -26206672.0, -1211662175.0]
+Round  3 : [-1208692686.0, -579859522.0, -1345685321.0, -1162391107.0, -252973847.0, -403602852.0, -220512409.0, -1287502691.0, -105001541.0]
+Round  4 : [-1566564250.0, -573254660.0, -610868938.0, -1103299223.0, -686723798.0, 17795513.0, -804160887.0, -74369393.0, -1369421213.0]
+Round  5 : [-1538493121.0, 484850632.0, -1128286678.0, -87407544.0, 233236818.0, -400436166.0, -701360177.0, -1059821372.0, -1092830035.0]
+Round  6 : [-259174011.0, -1526891370.0, -387622792.0, -1161026662.0, 424059343.0, -185228304.0, 205817486.0, -577258536.0, -1128739151.0]
+Round  7 : [-1603456686.0, -1083746411.0, -36117793.0, -1168021514.0, 353254600.0, -483608174.0, -736718970.0, -810013215.0, -1597938417.0]
+Round  8 : [375448681.0, -1612050093.0, -920793296.0, -71159007.0, -627228870.0, 515616679.0, -99412715.0, 181071708.0, -527944059.0]
+final strategy:  [3.101924655880804e+37, 3.495857149971031e+37, 9.976463789156132e+37, 1.253235951419713e+38, 2.226269241620326e+38, 1.4838426179307613e+36, 3.15180106094588e+37, 1.3726190033753924e+38, 5.872941755753581e+37]
+2020-03-27 18:24:36,261 Stop MPyC runtime -- elapsed time: 0:00:38.491391
+	Command being timed: "/usr/local/bin/python3 noe.py inversion 9 -M 9"
+	User time (seconds): 29.26
+	System time (seconds): 1.84
+	Percent of CPU this job got: 79%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:39.27
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 185352
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 170429
+	Voluntary context switches: 15309
+	Involuntary context switches: 452335
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

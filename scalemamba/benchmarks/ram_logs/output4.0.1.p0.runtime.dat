@@ -1,0 +1,90 @@
+(Min,Max) number of ...
+	(0,infty) multiplication triples
+	(0,infty) square pairs
+	(0,infty) bits
+0
+127.0.0.1
+Player0.crt
+player0@example.com
+1
+127.0.0.1
+Player1.crt
+player1@example.com
+2
+127.0.0.1
+Player2.crt
+player2@example.com
+3
+127.0.0.1
+Player3.crt
+player3@example.com
+
+
+p=5316911983139663491615228241123082241
+Opening file ./Programs/noe/noe.sch
+Number of online threads I will run in parallel =  1
+Number of program sequences I need to load =  1
+Loading program 0 from ./Programs/noe/noe-0.bc
+noe-0 needs more gfp memory, resizing to 8192
+noe-0 needs more Share memory, resizing to 8432
+noe-0 needs more integer memory, resizing to 8192
+All connections now done
+Setting up threads
+I am player 0 in thread 1
+I am player 0 in thread 2
+I am player 0 in thread 0
+I am player 0 in thread 3
+I am player 0 in thread 4
+I am player 0 in thread 10000
+Waiting for thread 0 to be ready
+I am player 0 in thread 10001
+Set up player 0 in thread 4 
+Doing online for player 0 in online thread 0
+Set up player 0 in thread 10000 
+Set up player 0 in thread 10001 
+Set up player 0 in thread 1 
+Set up player 0 in thread 2 
+Set up player 0 in thread 0 
+Set up player 0 in thread 3 
+Signal online thread ready 0
+Starting online phase
+bank[0] failed? 0 (debt 2043	payment 2087)
+bank[1] failed? 0 (debt 1125	payment 1125)
+bank[2] failed? 0 (debt 1160	payment 1160)
+bank[3] failed? 0 (debt 729	payment 729)
+Failed banks: 0
+Shortfall: 0
+Compiler: compile.py Programs/noe
+Waiting for all clients to finish
+Waiting for all clients to finish
+	Thread 0 terminating
+Sent 17590 elements in 289 rounds
+Exiting online phase : 0
+Exiting sacrifice phase : thread = 0
+Exiting bit phase: thread = 0
+Exiting square phase: thread = 0
+Exiting mult phase : thread = 0
+End of prog
+	Command being timed: "./Player.x 0 ./Programs/noe"
+	User time (seconds): 1889.18
+	System time (seconds): 124.65
+	Percent of CPU this job got: 224%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 14:58.01
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 6387548
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 77977611
+	Voluntary context switches: 219322
+	Involuntary context switches: 4484
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 960
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

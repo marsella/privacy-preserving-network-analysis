@@ -1,0 +1,98 @@
+(Min,Max) number of ...
+	(0,infty) multiplication triples
+	(0,infty) square pairs
+	(0,infty) bits
+0
+127.0.0.1
+Player0.crt
+player0@example.com
+1
+127.0.0.1
+Player1.crt
+player1@example.com
+2
+127.0.0.1
+Player2.crt
+player2@example.com
+
+
+p=5316911983139663491615228241123082241
+Opening file ./Programs/noe/noe.sch
+Number of online threads I will run in parallel =  1
+Number of program sequences I need to load =  1
+Loading program 0 from ./Programs/noe/noe-0.bc
+noe-0 needs more gfp memory, resizing to 8192
+noe-0 needs more Share memory, resizing to 9632
+noe-0 needs more integer memory, resizing to 8192
+All connections now done
+Setting up threads
+I am player 0 in thread 0
+I am player 0 in thread 3
+I am player 0 in thread 1
+I am player 0 in thread 10000
+Waiting for thread 0 to be ready
+I am player 0 in thread 4
+I am player 0 in thread 10001
+I am player 0 in thread 2
+Set up player 0 in thread 10000 
+Set up player 0 in thread 0 
+Set up player 0 in thread 3 
+Set up player 0 in thread 1 
+Set up player 0 in thread 4 
+Doing online for player 0 in online thread 0
+Set up player 0 in thread 2 
+Set up player 0 in thread 10001 
+Signal online thread ready 0
+Starting online phase
+ri: 750
+ri: 290
+ri: 833
+ri: 62
+ri: 513
+ri: 91
+ri: 881
+ri: 682
+bank[0] failed? 1 (debt 3597	payment 3023.15)
+bank[1] failed? 0 (debt 4056	payment 4056)
+bank[2] failed? 0 (debt 2982	payment 2982)
+bank[3] failed? 1 (debt 3637	payment 3295.55)
+bank[4] failed? 0 (debt 3134	payment 3134)
+bank[5] failed? 1 (debt 3849	payment 2999.16)
+bank[6] failed? 0 (debt 2351	payment 2351)
+bank[7] failed? 0 (debt 3659	payment 3659)
+Failed banks: 3
+Shortfall: 1765.15
+Compiler: compile.py Programs/noe
+Waiting for all clients to finish
+Waiting for all clients to finish
+	Thread 0 terminating
+Sent 81586 elements in 2077 rounds
+Exiting online phase : 0
+Exiting sacrifice phase : thread = 0
+Exiting mult phase : thread = 0
+Exiting square phase: thread = 0
+Exiting bit phase: thread = 0
+End of prog
+	Command being timed: "./Player.x 0 ./Programs/noe"
+	User time (seconds): 5010.37
+	System time (seconds): 212.37
+	Percent of CPU this job got: 281%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 30:54.67
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 7133956
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 142320220
+	Voluntary context switches: 415338
+	Involuntary context switches: 38181
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1040
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

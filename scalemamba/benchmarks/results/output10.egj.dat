@@ -1,0 +1,984 @@
+Compiling program in Programs/egj
+egj
+p = 5316911983139663491615228241123082241
+Prime size: 120
+Default bit length: 64
+Default statistical security parameter: 40
+Under Over Flow flag:  True
+Compiling file Programs/egj/egj.mpc
+Compiling basic block egj-0--0
+Compiled 100000 lines at Tue Mar 24 21:15:36 2020
+Compiled 200000 lines at Tue Mar 24 21:15:37 2020
+Compiled 300000 lines at Tue Mar 24 21:15:38 2020
+Compiled 400000 lines at Tue Mar 24 21:15:39 2020
+Compiled 500000 lines at Tue Mar 24 21:15:40 2020
+Compiled 600000 lines at Tue Mar 24 21:15:41 2020
+Compiled 700000 lines at Tue Mar 24 21:15:42 2020
+Compiled 800000 lines at Tue Mar 24 21:15:43 2020
+Compiled 900000 lines at Tue Mar 24 21:15:45 2020
+Compiled 1000000 lines at Tue Mar 24 21:15:45 2020
+Initialized 1000000 registers at Tue Mar 24 21:15:46 2020
+Compiled 1100000 lines at Tue Mar 24 21:15:47 2020
+Compiled 1200000 lines at Tue Mar 24 21:15:48 2020
+Processing tape egj-0 with 1 blocks
+Processing basic block egj-0--0, 0/1, 1217104 instructions
+Processed dependency of 100000/1217104 instructions at Tue Mar 24 21:15:56 2020
+Processed dependency of 200000/1217104 instructions at Tue Mar 24 21:15:57 2020
+Processed dependency of 300000/1217104 instructions at Tue Mar 24 21:15:58 2020
+Processed dependency of 400000/1217104 instructions at Tue Mar 24 21:15:58 2020
+Processed dependency of 500000/1217104 instructions at Tue Mar 24 21:15:59 2020
+Processed dependency of 600000/1217104 instructions at Tue Mar 24 21:16:00 2020
+Processed dependency of 700000/1217104 instructions at Tue Mar 24 21:16:01 2020
+Processed dependency of 800000/1217104 instructions at Tue Mar 24 21:16:02 2020
+Processed dependency of 900000/1217104 instructions at Tue Mar 24 21:16:03 2020
+Processed dependency of 1000000/1217104 instructions at Tue Mar 24 21:16:03 2020
+Processed dependency of 1100000/1217104 instructions at Tue Mar 24 21:16:04 2020
+Processed dependency of 1200000/1217104 instructions at Tue Mar 24 21:16:05 2020
+Program has 6230 <class 'Compiler.instructions.startopen'> instructions
+Merging open instructions...
+Topological sort ...
+Done at Tue Mar 24 21:16:11 2020
+Program requires 11 rounds of communication
+Program requires 9340 invocations
+Tape register usage: defaultdict(<function <lambda> at 0x7fe285d40a50>, {'c': 40450, 'r': 0, 's': 1201450})
+modp: 40450 clear, 1201450 secret
+Re-allocating...
+Allocating egj-0--0, 0/1
+Allocated registers for 1000000 instructions at Tue Mar 24 21:16:18 2020
+Register(s) [s6199] never used, assigned by 'ldsi s6199, 1048576' in <omitted>
+Register(s) [s6200] never used, assigned by 'ldsi s6200, 0' in <omitted>
+Register(s) [s6201] never used, assigned by 'ldsi s6201, 0' in <omitted>
+Register(s) [s6202] never used, assigned by 'ldsi s6202, 0' in <omitted>
+Register(s) [s6204] never used, assigned by 'ldsi s6204, 0' in <omitted>
+Register(s) [s6206] never used, assigned by 'ldsi s6206, 0' in <omitted>
+Register(s) [s6208] never used, assigned by 'ldsi s6208, 0' in <omitted>
+Register(s) [s1] never used, assigned by 'ldsi s1, 0' in <omitted>
+Register(s) [s2] never used, assigned by 'ldsi s2, 0' in <omitted>
+Register(s) [s5] never used, assigned by 'ldsi s5, 0' in <omitted>
+Register(s) [s6] never used, assigned by 'ldsi s6, 0' in <omitted>
+Register(s) [s7] never used, assigned by 'ldsi s7, 1048576' in <omitted>
+Register(s) [s9] never used, assigned by 'ldsi s9, 0' in <omitted>
+Register(s) [s10] never used, assigned by 'ldsi s10, 0' in <omitted>
+Register(s) [s11] never used, assigned by 'ldsi s11, 0' in <omitted>
+Register(s) [s13] never used, assigned by 'ldsi s13, 0' in <omitted>
+Register(s) [s15] never used, assigned by 'ldsi s15, 0' in <omitted>
+Register(s) [s16] never used, assigned by 'ldsi s16, 0' in <omitted>
+Register(s) [s18] never used, assigned by 'ldsi s18, 0' in <omitted>
+Register(s) [s19] never used, assigned by 'ldsi s19, 0' in <omitted>
+Register(s) [s20] never used, assigned by 'ldsi s20, 0' in <omitted>
+Register(s) [s21] never used, assigned by 'ldsi s21, 0' in <omitted>
+Register(s) [s22] never used, assigned by 'ldsi s22, 1048576' in <omitted>
+Register(s) [s23] never used, assigned by 'ldsi s23, 0' in <omitted>
+Register(s) [s25] never used, assigned by 'ldsi s25, 0' in <omitted>
+Register(s) [s26] never used, assigned by 'ldsi s26, 0' in <omitted>
+Register(s) [s28] never used, assigned by 'ldsi s28, 0' in <omitted>
+Register(s) [s31] never used, assigned by 'ldsi s31, 0' in <omitted>
+Register(s) [s33] never used, assigned by 'ldsi s33, 0' in <omitted>
+Register(s) [s35] never used, assigned by 'ldsi s35, 0' in <omitted>
+Register(s) [s37] never used, assigned by 'ldsi s37, 0' in <omitted>
+Register(s) [s38] never used, assigned by 'ldsi s38, 0' in <omitted>
+Register(s) [s39] never used, assigned by 'ldsi s39, 0' in <omitted>
+Register(s) [s40] never used, assigned by 'ldsi s40, 1048576' in <omitted>
+Register(s) [s43] never used, assigned by 'ldsi s43, 0' in <omitted>
+Register(s) [s44] never used, assigned by 'ldsi s44, 0' in <omitted>
+Register(s) [s45] never used, assigned by 'ldsi s45, 0' in <omitted>
+Register(s) [s46] never used, assigned by 'ldsi s46, 0' in <omitted>
+Register(s) [s49] never used, assigned by 'ldsi s49, 0' in <omitted>
+Register(s) [s52] never used, assigned by 'ldsi s52, 0' in <omitted>
+Register(s) [s53] never used, assigned by 'ldsi s53, 0' in <omitted>
+Register(s) [s54] never used, assigned by 'ldsi s54, 0' in <omitted>
+Register(s) [s56] never used, assigned by 'ldsi s56, 0' in <omitted>
+Register(s) [s57] never used, assigned by 'ldsi s57, 0' in <omitted>
+Register(s) [s58] never used, assigned by 'ldsi s58, 1048576' in <omitted>
+Register(s) [s61] never used, assigned by 'ldsi s61, 0' in <omitted>
+Register(s) [s62] never used, assigned by 'ldsi s62, 0' in <omitted>
+Register(s) [s63] never used, assigned by 'ldsi s63, 0' in <omitted>
+Register(s) [s67] never used, assigned by 'ldsi s67, 0' in <omitted>
+Register(s) [s68] never used, assigned by 'ldsi s68, 0' in <omitted>
+Register(s) [s69] never used, assigned by 'ldsi s69, 0' in <omitted>
+Register(s) [s70] never used, assigned by 'ldsi s70, 0' in <omitted>
+Register(s) [s71] never used, assigned by 'ldsi s71, 0' in <omitted>
+Register(s) [s72] never used, assigned by 'ldsi s72, 0' in <omitted>
+Register(s) [s73] never used, assigned by 'ldsi s73, 0' in <omitted>
+Register(s) [s74] never used, assigned by 'ldsi s74, 1048576' in <omitted>
+Register(s) [s76] never used, assigned by 'ldsi s76, 0' in <omitted>
+Register(s) [s78] never used, assigned by 'ldsi s78, 0' in <omitted>
+Register(s) [s83] never used, assigned by 'ldsi s83, 0' in <omitted>
+Register(s) [s84] never used, assigned by 'ldsi s84, 0' in <omitted>
+Register(s) [s85] never used, assigned by 'ldsi s85, 0' in <omitted>
+Register(s) [s87] never used, assigned by 'ldsi s87, 0' in <omitted>
+Register(s) [s88] never used, assigned by 'ldsi s88, 0' in <omitted>
+Register(s) [s89] never used, assigned by 'ldsi s89, 0' in <omitted>
+Register(s) [s90] never used, assigned by 'ldsi s90, 0' in <omitted>
+Register(s) [s91] never used, assigned by 'ldsi s91, 0' in <omitted>
+Register(s) [s92] never used, assigned by 'ldsi s92, 1048576' in <omitted>
+Register(s) [s93] never used, assigned by 'ldsi s93, 0' in <omitted>
+Register(s) [s96] never used, assigned by 'ldsi s96, 0' in <omitted>
+Register(s) [s97] never used, assigned by 'ldsi s97, 0' in <omitted>
+Register(s) [s98] never used, assigned by 'ldsi s98, 0' in <omitted>
+Register(s) [s100] never used, assigned by 'ldsi s100, 0' in <omitted>
+Register(s) [s101] never used, assigned by 'ldsi s101, 0' in <omitted>
+Register(s) [s103] never used, assigned by 'ldsi s103, 0' in <omitted>
+Register(s) [s105] never used, assigned by 'ldsi s105, 0' in <omitted>
+Register(s) [s107] never used, assigned by 'ldsi s107, 0' in <omitted>
+Register(s) [s108] never used, assigned by 'ldsi s108, 0' in <omitted>
+Register(s) [s109] never used, assigned by 'ldsi s109, 1048576' in <omitted>
+Register(s) [s111] never used, assigned by 'ldsi s111, 0' in <omitted>
+Register(s) [s113] never used, assigned by 'ldsi s113, 0' in <omitted>
+Register(s) [s114] never used, assigned by 'ldsi s114, 0' in <omitted>
+Register(s) [s118] never used, assigned by 'ldsi s118, 0' in <omitted>
+Register(s) [s119] never used, assigned by 'ldsi s119, 0' in <omitted>
+Register(s) [s120] never used, assigned by 'ldsi s120, 0' in <omitted>
+Register(s) [s121] never used, assigned by 'ldsi s121, 0' in <omitted>
+Register(s) [s123] never used, assigned by 'ldsi s123, 0' in <omitted>
+Register(s) [s124] never used, assigned by 'ldsi s124, 0' in <omitted>
+Register(s) [s126] never used, assigned by 'ldsi s126, 0' in <omitted>
+Register(s) [s127] never used, assigned by 'ldsi s127, 1048576' in <omitted>
+Register(s) [s128] never used, assigned by 'ldsi s128, 0' in <omitted>
+Register(s) [s129] never used, assigned by 'ldsi s129, 0' in <omitted>
+Register(s) [s131] never used, assigned by 'ldsi s131, 0' in <omitted>
+Register(s) [s133] never used, assigned by 'ldsi s133, 0' in <omitted>
+Register(s) [s136] never used, assigned by 'ldsi s136, 0' in <omitted>
+Register(s) [s138] never used, assigned by 'ldsi s138, 0' in <omitted>
+Register(s) [s141] never used, assigned by 'ldsi s141, 0' in <omitted>
+Register(s) [s142] never used, assigned by 'ldsi s142, 0' in <omitted>
+Register(s) [s144] never used, assigned by 'ldsi s144, 0' in <omitted>
+Register(s) [s145] never used, assigned by 'ldsi s145, 0' in <omitted>
+Register(s) [s146] never used, assigned by 'ldsi s146, 1048576' in <omitted>
+Register(s) [s147] never used, assigned by 'ldsi s147, 0' in <omitted>
+Register(s) [s148] never used, assigned by 'ldsi s148, 0' in <omitted>
+Register(s) [s149] never used, assigned by 'ldsi s149, 0' in <omitted>
+Register(s) [s153] never used, assigned by 'ldsi s153, 0' in <omitted>
+Register(s) [s154] never used, assigned by 'ldsi s154, 0' in <omitted>
+Register(s) [s155] never used, assigned by 'ldsi s155, 0' in <omitted>
+Register(s) [s157] never used, assigned by 'ldsi s157, 0' in <omitted>
+Register(s) [s158] never used, assigned by 'ldsi s158, 0' in <omitted>
+Register(s) [s159] never used, assigned by 'ldsi s159, 0' in <omitted>
+Register(s) [s160] never used, assigned by 'ldsi s160, 0' in <omitted>
+Register(s) [s161] never used, assigned by 'ldsi s161, 0' in <omitted>
+Register(s) [s162] never used, assigned by 'ldsi s162, 0' in <omitted>
+Register(s) [s164] never used, assigned by 'ldsi s164, 0' in <omitted>
+Register(s) [s166] never used, assigned by 'ldsi s166, 0' in <omitted>
+Register(s) [s167] never used, assigned by 'ldsi s167, 0' in <omitted>
+Register(s) [s171] never used, assigned by 'ldsi s171, 0' in <omitted>
+Register(s) [s172] never used, assigned by 'ldsi s172, 0' in <omitted>
+Register(s) [s173] never used, assigned by 'ldsi s173, 0' in <omitted>
+Register(s) [s174] never used, assigned by 'ldsi s174, 0' in <omitted>
+Register(s) [s175] never used, assigned by 'ldsi s175, 0' in <omitted>
+Register(s) [s180] never used, assigned by 'ldsi s180, 0' in <omitted>
+Register(s) [s181] never used, assigned by 'ldsi s181, 0' in <omitted>
+Register(s) [s182] never used, assigned by 'ldsi s182, 0' in <omitted>
+Register(s) [s183] never used, assigned by 'ldsi s183, 0' in <omitted>
+Register(s) [s186] never used, assigned by 'ldsi s186, 0' in <omitted>
+Register(s) [s188] never used, assigned by 'ldsi s188, 0' in <omitted>
+Register(s) [s192] never used, assigned by 'ldsi s192, 0' in <omitted>
+Register(s) [s193] never used, assigned by 'ldsi s193, 0' in <omitted>
+Register(s) [s196] never used, assigned by 'ldsi s196, 0' in <omitted>
+Register(s) [s198] never used, assigned by 'ldsi s198, 0' in <omitted>
+Register(s) [s200] never used, assigned by 'ldsi s200, 0' in <omitted>
+Register(s) [s203] never used, assigned by 'ldsi s203, 0' in <omitted>
+Register(s) [s205] never used, assigned by 'ldsi s205, 0' in <omitted>
+Register(s) [s206] never used, assigned by 'ldsi s206, 0' in <omitted>
+Register(s) [s207] never used, assigned by 'ldsi s207, 0' in <omitted>
+Register(s) [s210] never used, assigned by 'ldsi s210, 0' in <omitted>
+Register(s) [s212] never used, assigned by 'ldsi s212, 0' in <omitted>
+Register(s) [s214] never used, assigned by 'ldsi s214, 0' in <omitted>
+Register(s) [s215] never used, assigned by 'ldsi s215, 0' in <omitted>
+Register(s) [s216] never used, assigned by 'ldsi s216, 0' in <omitted>
+Register(s) [s221] never used, assigned by 'ldsi s221, 0' in <omitted>
+Register(s) [s222] never used, assigned by 'ldsi s222, 0' in <omitted>
+Register(s) [s223] never used, assigned by 'ldsi s223, 0' in <omitted>
+Register(s) [s224] never used, assigned by 'ldsi s224, 0' in <omitted>
+Register(s) [s226] never used, assigned by 'ldsi s226, 0' in <omitted>
+Register(s) [s229] never used, assigned by 'ldsi s229, 0' in <omitted>
+Register(s) [s231] never used, assigned by 'ldsi s231, 0' in <omitted>
+Register(s) [s233] never used, assigned by 'ldsi s233, 0' in <omitted>
+Register(s) [s235] never used, assigned by 'ldsi s235, 0' in <omitted>
+Register(s) [s236] never used, assigned by 'ldsi s236, 0' in <omitted>
+Register(s) [s238] never used, assigned by 'ldsi s238, 0' in <omitted>
+Register(s) [s239] never used, assigned by 'ldsi s239, 0' in <omitted>
+Register(s) [s241] never used, assigned by 'ldsi s241, 0' in <omitted>
+Register(s) [s242] never used, assigned by 'ldsi s242, 0' in <omitted>
+Register(s) [s243] never used, assigned by 'ldsi s243, 0' in <omitted>
+Register(s) [s244] never used, assigned by 'ldsi s244, 0' in <omitted>
+Register(s) [s245] never used, assigned by 'ldsi s245, 0' in <omitted>
+Register(s) [s247] never used, assigned by 'ldsi s247, 0' in <omitted>
+Register(s) [s250] never used, assigned by 'ldsi s250, 0' in <omitted>
+Register(s) [s251] never used, assigned by 'ldsi s251, 0' in <omitted>
+Register(s) [s254] never used, assigned by 'ldsi s254, 0' in <omitted>
+Register(s) [s255] never used, assigned by 'ldsi s255, 0' in <omitted>
+Register(s) [s258] never used, assigned by 'ldsi s258, 0' in <omitted>
+Register(s) [s261] never used, assigned by 'ldsi s261, 0' in <omitted>
+Register(s) [s262] never used, assigned by 'ldsi s262, 0' in <omitted>
+Register(s) [s264] never used, assigned by 'ldsi s264, 0' in <omitted>
+Register(s) [s265] never used, assigned by 'ldsi s265, 0' in <omitted>
+Register(s) [s266] never used, assigned by 'ldsi s266, 0' in <omitted>
+Register(s) [s267] never used, assigned by 'ldsi s267, 0' in <omitted>
+Register(s) [s268] never used, assigned by 'ldsi s268, 0' in <omitted>
+Register(s) [s269] never used, assigned by 'ldsi s269, 0' in <omitted>
+Register(s) [s272] never used, assigned by 'ldsi s272, 0' in <omitted>
+Register(s) [s273] never used, assigned by 'ldsi s273, 0' in <omitted>
+Register(s) [s274] never used, assigned by 'ldsi s274, 0' in <omitted>
+Register(s) [s277] never used, assigned by 'ldsi s277, 0' in <omitted>
+Register(s) [s279] never used, assigned by 'ldsi s279, 0' in <omitted>
+Register(s) [s280] never used, assigned by 'ldsi s280, 0' in <omitted>
+Register(s) [s281] never used, assigned by 'ldsi s281, 0' in <omitted>
+Register(s) [s282] never used, assigned by 'ldsi s282, 0' in <omitted>
+Register(s) [s285] never used, assigned by 'ldsi s285, 0' in <omitted>
+Register(s) [s286] never used, assigned by 'ldsi s286, 0' in <omitted>
+Register(s) [s287] never used, assigned by 'ldsi s287, 0' in <omitted>
+Register(s) [s289] never used, assigned by 'ldsi s289, 0' in <omitted>
+Register(s) [s290] never used, assigned by 'ldsi s290, 0' in <omitted>
+Register(s) [s292] never used, assigned by 'ldsi s292, 0' in <omitted>
+Register(s) [s295] never used, assigned by 'ldsi s295, 0' in <omitted>
+Register(s) [s296] never used, assigned by 'ldsi s296, 0' in <omitted>
+Register(s) [s297] never used, assigned by 'ldsi s297, 0' in <omitted>
+Register(s) [s298] never used, assigned by 'ldsi s298, 0' in <omitted>
+Register(s) [s299] never used, assigned by 'ldsi s299, 0' in <omitted>
+Register(s) [s300] never used, assigned by 'ldsi s300, 0' in <omitted>
+Register(s) [s304] never used, assigned by 'ldsi s304, 0' in <omitted>
+Register(s) [s308] never used, assigned by 'ldsi s308, 0' in <omitted>
+Register(s) [s309] never used, assigned by 'ldsi s309, 0' in <omitted>
+Register(s) [s310] never used, assigned by 'ldsi s310, 0' in <omitted>
+Register(s) [s311] never used, assigned by 'ldsi s311, 0' in <omitted>
+Register(s) [s312] never used, assigned by 'ldsi s312, 0' in <omitted>
+Register(s) [s313] never used, assigned by 'ldsi s313, 0' in <omitted>
+Register(s) [s314] never used, assigned by 'ldsi s314, 0' in <omitted>
+Register(s) [s318] never used, assigned by 'ldsi s318, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Compile offline data requirements...
+Tape requires 3110 triples in modp, 379420 bits in modp
+Tape requires prime bit length 123
+Program requires: {('modp', 'triple'): 3110, ('modp', 'bit'): 379420}
+Memory size: defaultdict(<function <lambda> at 0x7fe2af531e50>, {'c': 8192, 'r': 8192, 's': 8192})
+Compiling basic block egj-0-memory-usage-1
+Memory of type 'c' of size 8192
+Memory of type 'r' of size 8192
+Memory of type 's' of size 8192
+Writing to Programs/egj/egj.sch
+Writing to Programs/egj/egj-0.bc
+Writing to Programs/egj/egj-0.bc
+	Command being timed: "/usr/bin/python2 compile.py Programs/egj"
+	User time (seconds): 49.89
+	System time (seconds): 2.11
+	Percent of CPU this job got: 102%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:50.95
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1515976
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 1248384
+	Voluntary context switches: 46
+	Involuntary context switches: 82673
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 31856
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Compiling program in Programs/egj
+egj
+p = 5316911983139663491615228241123082241
+Prime size: 120
+Default bit length: 64
+Default statistical security parameter: 40
+Under Over Flow flag:  True
+Compiling file Programs/egj/egj.mpc
+Compiling basic block egj-0--0
+Compiled 100000 lines at Tue Mar 24 21:17:23 2020
+Compiled 200000 lines at Tue Mar 24 21:17:25 2020
+Compiled 300000 lines at Tue Mar 24 21:17:26 2020
+Compiled 400000 lines at Tue Mar 24 21:17:27 2020
+Compiled 500000 lines at Tue Mar 24 21:17:28 2020
+Compiled 600000 lines at Tue Mar 24 21:17:29 2020
+Compiled 700000 lines at Tue Mar 24 21:17:30 2020
+Compiled 800000 lines at Tue Mar 24 21:17:31 2020
+Compiled 900000 lines at Tue Mar 24 21:17:32 2020
+Compiled 1000000 lines at Tue Mar 24 21:17:33 2020
+Initialized 1000000 registers at Tue Mar 24 21:17:33 2020
+Compiled 1100000 lines at Tue Mar 24 21:17:34 2020
+Compiled 1200000 lines at Tue Mar 24 21:17:35 2020
+Processing tape egj-0 with 1 blocks
+Processing basic block egj-0--0, 0/1, 1217112 instructions
+Processed dependency of 100000/1217112 instructions at Tue Mar 24 21:17:44 2020
+Processed dependency of 200000/1217112 instructions at Tue Mar 24 21:17:45 2020
+Processed dependency of 300000/1217112 instructions at Tue Mar 24 21:17:45 2020
+Processed dependency of 400000/1217112 instructions at Tue Mar 24 21:17:46 2020
+Processed dependency of 500000/1217112 instructions at Tue Mar 24 21:17:47 2020
+Processed dependency of 600000/1217112 instructions at Tue Mar 24 21:17:48 2020
+Processed dependency of 700000/1217112 instructions at Tue Mar 24 21:17:49 2020
+Processed dependency of 800000/1217112 instructions at Tue Mar 24 21:17:49 2020
+Processed dependency of 900000/1217112 instructions at Tue Mar 24 21:17:50 2020
+Processed dependency of 1000000/1217112 instructions at Tue Mar 24 21:17:51 2020
+Processed dependency of 1100000/1217112 instructions at Tue Mar 24 21:17:52 2020
+Processed dependency of 1200000/1217112 instructions at Tue Mar 24 21:17:53 2020
+Program has 6230 <class 'Compiler.instructions.startopen'> instructions
+Merging open instructions...
+Topological sort ...
+Done at Tue Mar 24 21:17:58 2020
+Program requires 11 rounds of communication
+Program requires 9340 invocations
+Tape register usage: defaultdict(<function <lambda> at 0x7f8922824a50>, {'c': 40450, 'r': 0, 's': 1201450})
+modp: 40450 clear, 1201450 secret
+Re-allocating...
+Allocating egj-0--0, 0/1
+Allocated registers for 1000000 instructions at Tue Mar 24 21:18:06 2020
+Register(s) [s0] never used, assigned by 'ldsi s0, 1048576' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 1048576' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 1048576' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 1048576' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 1048576' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 1048576' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 1048576' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 1048576' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 1048576' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 1048576' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Register(s) [s0] never used, assigned by 'ldsi s0, 0' in <omitted>
+Compile offline data requirements...
+Tape requires 3110 triples in modp, 379420 bits in modp
+Tape requires prime bit length 123
+Program requires: {('modp', 'triple'): 3110, ('modp', 'bit'): 379420}
+Memory size: defaultdict(<function <lambda> at 0x7f894c015e50>, {'c': 8192, 'r': 8192, 's': 8192})
+Compiling basic block egj-0-memory-usage-1
+Memory of type 'c' of size 8192
+Memory of type 'r' of size 8192
+Memory of type 's' of size 8192
+Writing to Programs/egj/egj.sch
+Writing to Programs/egj/egj-0.bc
+Writing to Programs/egj/egj-0.bc
+	Command being timed: "/usr/bin/python2 compile.py Programs/egj"
+	User time (seconds): 49.75
+	System time (seconds): 1.96
+	Percent of CPU this job got: 102%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:50.60
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1515796
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 984675
+	Voluntary context switches: 49
+	Involuntary context switches: 77
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 31864
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

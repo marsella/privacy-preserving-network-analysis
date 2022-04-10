@@ -1,0 +1,31 @@
+CIRCUIT:	/usr/local/include/emp-tool/circuits/files/4EGJ.circuit.txt
+720 input gates
+144 output gates
+Setup:	1	45637
+FUNC_IND:	1	1.00423e+07 
+FUNC_DEP:	1	1.64344e+06 
+ONLINE:	1	1.31401e+06 
+[ 000000000000000000000000000000000000000000000000 (0) 000000000000000000000000000000000000000000000000 (0) 000000000000000000000000000000000000000000000000 (0) ]
+	Command being timed: "./bin/bench_mpc 1 12345"
+	User time (seconds): 20.50
+	System time (seconds): 8.47
+	Percent of CPU this job got: 198%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:14.58
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3916616
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 3417508
+	Voluntary context switches: 210652
+	Involuntary context switches: 14023
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

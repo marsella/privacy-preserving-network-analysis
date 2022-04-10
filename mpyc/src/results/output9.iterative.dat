@@ -1,0 +1,37 @@
+2020-03-27 18:22:50,236 Start MPyC runtime v0.6
+2020-03-27 18:22:50,446 All 9 parties connected.
+running ITERATIVE algorithm
+Round  0 : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+Round  1 : [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+Round  2 : [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+Round  3 : [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+Round  4 : [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+Round  5 : [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+Round  6 : [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+Round  7 : [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+Round  8 : [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+final strategy:  [120499.0, 79628.5071893672, 217453.0, 50210.0, 16217.0, 421271.0, 421635.0, 18487.0, 16389.49618680775]
+2020-03-27 18:23:56,934 Stop MPyC runtime -- elapsed time: 0:01:06.697915
+	Command being timed: "/usr/local/bin/python3 noe.py iterative 9 -M 9"
+	User time (seconds): 46.26
+	System time (seconds): 1.79
+	Percent of CPU this job got: 71%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:07.51
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 87112
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 115016
+	Voluntary context switches: 17301
+	Involuntary context switches: 321758
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 24
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,43 @@
+diff --git a/src/Input_Output/IO.h b/src/Input_Output/IO.h
+index ed8ec6c..1e6c786 100644
+--- a/src/Input_Output/IO.h
++++ b/src/Input_Output/IO.h
+@@ -8,6 +8,7 @@ All rights reserved
+ #define _IO
+ 
+ #include "Input_Output_Simple.h"
++#include "Input_Output_File.h"
+ 
+ // #include "Input_Output_Galois.h"
+
+diff --git a/src/Player.cpp b/src/Player.cpp
+index 6f657e0..e45ef0e 100644
+--- a/src/Player.cpp
++++ b/src/Player.cpp
+@@ -383,8 +383,11 @@ int main(int argc, const char *argv[])
+   // Here you configure the IO in the machine
+   //  - This depends on what IO machinary you are using
+   //  - Here we are just using the simple IO class
+-  unique_ptr<Input_Output_Simple> io(new Input_Output_Simple);
+-  io->init(cin, cout, true);
++  unique_ptr<Input_Output_File> io(new Input_Output_File);
++  ifstream fin; ofstream fout;
++  fin.open("Data/Player" + std::to_string(my_number) + "_in.dat");
++  fout.open("Data/Player" + std::to_string(my_number) + "_out.dat");
++  io->init(fin,fout,true);
+   machine.Setup_IO(std::move(io));
+ 
+   // Load the initial tapes for the first program into the schedule
+
+diff --git a/src/config.h b/src/config.h
+index 77cd3f9..071b337 100644
+--- a/src/config.h
++++ b/src/config.h
+@@ -13,7 +13,7 @@ All rights reserved
+  * to base routine. For FHE based routines these are likely to
+  * be exceeded by a huge amount!
+  */
+-#define sz_offline_batch 60000
++#define sz_offline_batch 9000
+ #define sz_IO_batch 1000
+
