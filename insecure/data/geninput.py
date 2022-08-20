@@ -1,5 +1,5 @@
 ##
-# Generates data for a bankking network simulation
+# Generates data for a banking network simulation
 # 
 # Data fits the following constraints
 # - System is _consistent_: every debt has a matching credit
@@ -27,7 +27,7 @@ if len(sys.argv) == 2:
 try:
     [os.remove("data/bank%d.dat"%bid) for bid in range(n)]
 except: 
-    print "no files to remove :)"
+    print("no outdated files to remove :)")
 
 for bid in range(n):
     cash = random.randrange(MAX_CASH)
@@ -43,3 +43,4 @@ for bid in range(n):
                 
     f.close()
 
+print("Generated consistent data for %d parties"%n)

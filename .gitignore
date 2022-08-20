@@ -1,2 +1,11 @@
+.vscode/
+
 BIS/env/
 BIS/__pycache__/
+BIS/BISnames.csv
+BIS/bis_nolabel.png
+
+insecure/data/*.dat
+insecure/econ
+insecure/naive
+insecure/test

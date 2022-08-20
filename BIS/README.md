@@ -3,12 +3,6 @@
 ## Dependencies
 Install a recent verison of python3. This was tested with Python 3.8.10.
 
-Optionally, create and enter a new virtual environment:
-```
-$ python3 -m venv env
-$ source env/bin/activate
-```
-
 Install packages:
 ```
 $ pip install networkx matplotlib
@@ -20,6 +14,8 @@ We include a limited set of the BIS data here.
 Unfortunately, since the time we wrote this scraper in 2018, BIS has changed its URL scheme and query engine, so these files don't work right now:
 - `get_data.sh` retrieves the full consolidated banking statistics dataset from the BIS website and unzips it.
 - `format.R` parses it to retrieve the relevant values for our work. See the comments in that file and Section ?? for details.
+
+It seems like the same data is still available, though.
 
 ## Format data for figures
 

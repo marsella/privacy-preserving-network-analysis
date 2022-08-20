@@ -2,6 +2,7 @@
 #include<fstream>
 #include<string>
 #include<vector>
+#include<cassert>
 
 #include "bank.h"
 
@@ -93,7 +94,7 @@ void naiveSolvency(vector<Bank> banks) {
 }
 
 int main() {
-	int LEN = 5;
+	int LEN = 10;
 	vector<Bank> banks;
 	for(int i=0; i<LEN; i++) {
 		banks.push_back(Bank("data/bank" + to_string(i) + ".dat"));

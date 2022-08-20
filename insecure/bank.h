@@ -12,6 +12,8 @@ typedef struct Debt {
     uint amount;
 } Debt;
 
+struct BadInputError {};
+
 class Bank {
     private:
         int total_debt;
@@ -30,6 +32,7 @@ class Bank {
 
         Bank(string filename) {
             ifstream input;
+
             input.open(filename);
             cout << "reading data from " << filename << endl;
             Debt c;
@@ -56,7 +59,8 @@ class Bank {
                         input >> this->reserve;
                         break;
                     default:
-                        cout << "error: bad input type: " << type  << endl;
+                        BadInputError err;
+                        throw err;
                 }
             }
         }
