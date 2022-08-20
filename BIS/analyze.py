@@ -197,7 +197,7 @@ if __name__ == '__main__':
 	if args.parties:
 		prettyprint(reserves, liab)
 
-	elif (args.outputtype == 0):
+	if (args.outputtype == 0):
 		format_insecure(reserves, liab)
 	elif (args.outputtype == 1):
 		format_scalemamba(reserves, liab, './')
