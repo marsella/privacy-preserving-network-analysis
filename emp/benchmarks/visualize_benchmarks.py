@@ -96,8 +96,8 @@ if __name__ == "__main__":
 
 
     # plot runtime information
-    #plot_runtime([egjdata, endata],["EGJ", "EN"], "emp-time.png");
-    #plot_ram_usage([egjdata, endata],["EGJ", "EN"], "emp-ram.png");
-    plot_runtime([egjdata],["EGJ"], "emp-time.png");
-    plot_ram_usage([egjdata],["EGJ"], "emp-ram.png");
+    plot_runtime([egjdata, endata],["EGJ", "EN"], "emp-time.png");
+    plot_ram_usage([egjdata, endata],["EGJ", "EN"], "emp-ram.png");
+    #plot_runtime([egjdata],["EGJ"], "emp-time.png");
+    #plot_ram_usage([egjdata],["EGJ"], "emp-ram.png");
 

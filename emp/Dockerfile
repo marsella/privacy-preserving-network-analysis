@@ -7,7 +7,6 @@ RUN apt-get update && apt-get install -y \
   libgmp-dev \
   libssl-dev \
   psmisc \
-  python-pip \
   sudo \
   software-properties-common \
   wget \

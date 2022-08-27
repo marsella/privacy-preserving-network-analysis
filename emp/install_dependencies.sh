@@ -4,24 +4,26 @@ git clone https://github.com/emp-toolkit/emp-readme.git
 # install tools
 bash ./emp-readme/scripts/install_packages.sh
 apt-get install -y libboost-{chrono,log,program-options,date-time,thread,system,filesystem,regex,test}1.58-dev
-apt-get install -y python3-pip
 apt-get install -y gdb
 
 apt upgrade --fix-missing -y && apt autoremove -y && apt autoclean -y
 
-bash ./emp-readme/scripts/install_relic.sh
-bash ./emp-readme/scripts/install_emp-tool.sh
-bash ./emp-readme/scripts/install_emp-ot.sh
+python3 emp-readme/scripts/install.py --deps --tool --ot
+#bash ./emp-readme/scripts/install_relic.sh
+#bash ./emp-readme/scripts/install_emp-tool.sh
+#bash ./emp-readme/scripts/install_emp-ot.sh
 
 # install semi-honest 2-party circuits
 git clone https://github.com/emp-toolkit/emp-sh2pc.git
 
-# install numpy
+# install pip and numpy
+wget https://bootstrap.pypa.io/pip/3.5/get-pip.py
+python3 get-pip.py
 pip install --upgrade pip
 pip install numpy scipy
 
-pip3 install --upgrade pip
-pip3 install numpy scipy
+#pip3 install --upgrade pip
+#pip3 install numpy scipy
 
 # add our files to compile scripts
 cd 

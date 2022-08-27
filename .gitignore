@@ -9,3 +9,5 @@ insecure/data/*.dat
 insecure/econ
 insecure/naive
 insecure/test
+
+emp/benchmarks/__pycache__/
