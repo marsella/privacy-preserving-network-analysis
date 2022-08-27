@@ -1,13 +1,5 @@
 # BIS data
 
-## Dependencies
-Install a recent verison of python3. This was tested with Python 3.8.10.
-
-Install packages:
-```
-$ pip install networkx matplotlib
-```
-
 ## Retrieve the BIS data
 We include a limited set of the BIS data here. 
 
