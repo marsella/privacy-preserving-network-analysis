@@ -11,7 +11,6 @@ RUN apt-get update && apt-get install -y \
   m4 \
   make \
   patch \
-  python-pip \
   python \
   python3 \
   vim \
@@ -26,8 +25,8 @@ ADD source/ /root/source
 ADD install.sh .
 RUN ["bash", "install.sh"]
 
-#ADD benchmarks/benchmark.sh /root/
-#RUN ["chmod", "u+x", "/root/benchmark.sh"]
+ADD benchmarks/benchmark.sh /root/
+RUN ["chmod", "u+x", "/root/benchmark.sh"]
 #RUN ["./benchmark.sh", "0", "0"]
 #RUN ["./benchmark.sh", "0", "1"]
 #RUN ["./benchmark.sh", "1", "1"]

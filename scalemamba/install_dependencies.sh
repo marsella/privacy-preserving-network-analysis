@@ -1,3 +1,7 @@
+# install python packages
+pip install --upgrade pip
+pip install numpy
+
 # install supporting mpir library
 wget http://mpir.org/mpir-3.0.0.tar.bz2
 tar -xvf mpir-3.0.0.tar.bz2
@@ -25,7 +29,3 @@ tar xzvf time-1.9.tar.gz
 rm time-1.9.tar.gz
 cd time-1.9
 ./configure && make && make install
-
-# install python packages
-pip install --upgrade pip
-pip install numpy

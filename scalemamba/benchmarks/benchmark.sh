@@ -10,7 +10,8 @@ TIME="/usr/local/bin/time -v"
 PROG=noe
 
 PYTHON="/usr/bin/python2"
-RESULTDIR="/home/marcella/banking_MPC/code/scalemamba/benchmarks/results"
+RESULTDIR="/root/benchmarks"
+
 
 if [ $# -ne 2 ]; then
   echo "wrong number of arguments (expects 2)"
@@ -32,7 +33,9 @@ if [ $FAKE_SACRIFICE -ne 0 ] && [ $FAKE_SACRIFICE -ne 1 ]; then
   exit 1
 fi
 
-for BANK in 10 12
+mkdir -p $RESULTDIR
+
+for BANK in 2 4
 do
   # write the correct number of banks into the program
   sed -i '110c'"NUM_BANKS = int($BANK)" Programs/$PROG/$PROG.mpc

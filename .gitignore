@@ -11,3 +11,5 @@ insecure/naive
 insecure/test
 
 emp/benchmarks/__pycache__/
+
+scalemamba/benchmarks/__pycache__/

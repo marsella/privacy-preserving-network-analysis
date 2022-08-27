@@ -1,9 +1,12 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import parse_logs 
+import pathlib
+
+CSV_DIR = "csv/"
 
 def make_csv(data, label):
-    with open("../../../figures/scalemamba-%s.csv"%label, "w") as f:
+    with open(CSV_DIR+"scalemamba-%s.csv"%label, "w") as f:
         f.write("n %sruntime %sram\n"%(label, label))
         for dat in data:
             f.write("{},{},{}\n".format(
@@ -12,7 +15,7 @@ def make_csv(data, label):
                 max(dat.runtime_ram)/1000000))
 
 def make_fixed_csv(endata):
-    with open("../../../figures/scalemamba-fixed.csv", "w") as f:
+    with open(CSV_DIR+"scalemamba-fixed.csv", "w") as f:
         f.write("n ENruntime ENram \n")
         for en in endata:
             f.write("{},{},{}\n".format(
@@ -120,6 +123,7 @@ if __name__ == "__main__":
     plot_runtime([egjdata, endata],["EGJ", "EN"], "sm-time.png")
     plot_ram_usage([egjdata, endata],["EGJ", "EN"], "sm-ram.png")
 
+    pathlib.Path(CSV_DIR).mkdir(parents=True, exist_ok=True)
     make_csv(endata, "EN")
     make_csv(egjdata, "EGJ")
 
@@ -129,9 +133,6 @@ if __name__ == "__main__":
         fixdata.append(log)
     make_fixed_csv(fixdata)
 
-    
-
-    """
     endata = []
     small_batch_data = []
 
@@ -148,8 +149,9 @@ if __name__ == "__main__":
     all_real_data = [d for d in endata if (d.offline and d.sacrifice)]
     half_real_data = [d for d in endata if (d.offline and not d.sacrifice)]
     
-    plot_runtime([all_real_data],["SCALE-MAMBA"], "sm-time.png")
-    plot_ram_usage([all_real_data],["SCALE-MAMBA"], "sm-ram.png")
+    # plot runtime and RAM usage for just EN...
+    #plot_runtime([all_real_data],["SCALE-MAMBA"], "sm-time-real.png")
+    #plot_ram_usage([all_real_data],["SCALE-MAMBA"], "sm-ram-real.png")
 
     
     plot_runtime([all_fake_data, all_real_data, half_real_data], 
@@ -157,6 +159,7 @@ if __name__ == "__main__":
     plot_ram_usage([all_fake_data, all_real_data, half_real_data], 
                     ["fake offline", "real offline", "fake sacrifice"], "ram.png")
 
+    data = []
     for parties in range(2,9,2):
         for off,sacr in [(0,0),(1,1),(0,1)]:
             log = parse_logs.parse_logs(parties, off, sacr)
@@ -165,7 +168,5 @@ if __name__ == "__main__":
     batch_real_data = [d for d in small_batch_data if (d.offline and d.sacrifice)]
     plot_runtime([all_real_data,batch_real_data], ["batch=60K", "batch=9K"], "batch_timing.png")
     plot_ram_usage([all_real_data,batch_real_data], ["batch=60K", "batch=9K"], "batch_ram_usage.png")
-    """
-
 
 

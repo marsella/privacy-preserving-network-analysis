@@ -1,6 +1,6 @@
 import sys,random
 
-ONEPARTYINPUT = True
+ONEPARTYINPUT = False
 
 assert len(sys.argv) == 2
 NUM_BANKS = int(sys.argv[1])
