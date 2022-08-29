@@ -1,4 +1,4 @@
-df = read.csv("WEBSTATS_CBS_DATAFLOW_csv_col.csv")
+df = read.csv("WS_CBS_PUB_csv_col.csv")
 years = seq(1984,2018) 
 qcols = paste0( rep( paste0( "X", years ), each=4  ), rep( paste0(".Q", seq(1,4)) , length(years) ) )
 qcols = intersect( qcols, colnames(df) )
