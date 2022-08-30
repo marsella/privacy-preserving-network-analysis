@@ -12,6 +12,48 @@ cd ~/emp-sh2pc/build
 #done
 #mv *.circuit.txt /usr/local/include/emp-tool/circuits/files/
 
+# get readme scripts
+git clone https://github.com/emp-toolkit/emp-readme.git
+
+#Add relic packages for ECDSA signatures
+#sed -i 's/-DWITH="MD;DV;BN;FB;EB;EC"/-DWITH="MD;DV;BN;FB;EB;EC;FP;BC;CP"/' ~/emp-readme/scripts/install_relic.sh
+
+# install tools
+python3 ./emp-readme/scripts/install.py --tool --ot --sh2pc
+#apt-get install -y libboost-{chrono,log,program-options,date-time,thread,system,filesystem,regex,test}1.58-dev
+
+#bash ./emp-readme/scripts/install_relic.sh
+#bash ./emp-readme/scripts/install_emp-tool.sh
+#bash ./emp-readme/scripts/install_emp-ot.sh
+
+# install semi-honest 2-party circuits
+#git clone https://github.com/emp-toolkit/emp-sh2pc.git
+
+# add our files to compile scripts
+#cp source/* emp-sh2pc/test/
+cd 
+cp ~/source/geninput.py ~/emp-sh2pc/
+cp ~/source/EGJ_circuit_sizes.sh ~/emp-sh2pc/
+cp ~/source/EN_circuit_sizes.sh ~/emp-sh2pc/
+cp ~/source/benchEGJ.sh ~/emp-sh2pc/
+cp ~/source/EN.cpp ~/emp-sh2pc/test/
+cp ~/source/fixedp.h ~/emp-sh2pc/test/
+cp ~/source/matrix.h ~/emp-sh2pc/test/
+cp ~/source/EGJ.cpp ~/emp-sh2pc/test/
+cp ~/source/bench_EGJ.cpp ~/emp-sh2pc/test/
+
+cd emp-sh2pc
+echo "add_test (EN)" >> CMakeLists.txt
+echo "add_test (EGJ)" >> CMakeLists.txt
+echo "add_test (bench_EGJ)" >> CMakeLists.txt
+
+# build project
+mkdir build
+cd build
+cmake ..
+make
+#make install
+
 pushd /root/emp-sh2pc/build
 for ((nP=2;nP<5;nP++))
 do
