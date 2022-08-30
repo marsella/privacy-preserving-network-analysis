@@ -15,7 +15,7 @@ cd ~/emp-sh2pc/build
 pushd /root/emp-sh2pc/build
 for ((nP=2;nP<5;nP++))
 do
-	python geninput.py -e EN -n $nP
+	python3 geninput.py -e EN -n $nP
 	./bin/EN -m $nP
 	FILE="/usr/local/include/emp-tool/circuits/files/${nP}EGJ.circuit.txt"
 	if [ ! -f $FILE ]

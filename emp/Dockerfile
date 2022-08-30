@@ -10,7 +10,8 @@ RUN apt-get update && apt-get install -y \
   sudo \
   software-properties-common \
   wget \
-  vim
+  vim \
+  python
 ADD source/ /root/source
 ADD README.md .
 
