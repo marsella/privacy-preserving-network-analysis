@@ -2,7 +2,7 @@
 # consumes data produced by geninput.py
 # expected format is whitespace-separated:
 # reserves total-debt debt-to-0 debt-to-1 ...
-# todo: find a way to read fixe-point so we don't have to calculate it securely
+# todo: find a way to read fixed-point so we don't have to calculate it securely
 def initializeData(individual_debts, total_debts,reserves,proportions,defaults,payment_strategy):
 
   for i in range(NUM_BANKS):
