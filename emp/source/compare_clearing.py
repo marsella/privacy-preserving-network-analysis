@@ -1,3 +1,7 @@
+"""
+The EMP circuit outptus a bit representation of the clearing vector
+"""
+from __future__ import print_function
 import sys, getopt
 import math
 
@@ -5,7 +9,7 @@ def clearing( inputs ):
 	n2 = len( inputs )
 	n = int(math.sqrt(n2))
 	if( n**2 != n2 ):
-		print "ERROR! n = " + str(n) + ", n^2 = " + str(n**2)
+		print( "ERROR! n = " + str(n) + ", n^2 = " + str(n**2) )
 	
 	outputs = [0 for _ in range(n2)]
 	for i in range(n):
@@ -18,18 +22,18 @@ def main(argv):
 	try:
 		opts, args = getopt.getopt(argv,"hn:b:",["n=","b="])
 	except getopt.GetoptError:
-		print 'compare_clearing.py -n <num players> -b <bit len>'
+		print( 'compare_clearing.py -n <num players> -b <bit len>' )
 		sys.exit(2)
 	for opt, arg in opts:
 		if opt == '-h':
-			print 'compare_clearing.py -n <num players> -b <bit len>'
+			print( 'compare_clearing.py -n <num players> -b <bit len>' )
 			sys.exit()
 		elif opt in ("-n"):
 			n = int(arg)
 		elif opt in ("-b"):
 			b = int(arg)
-	print "n = " + str(n)
-	print "b = " + str(b)
+	print( f"n = {n}" )
+	print( f"b = {b}" )
 
 	fname1 = "data/clearing/" + str(n) + ".1.dat"
 	fname2 = "data/clearing/" + str(n) + ".2.dat"
@@ -45,15 +49,15 @@ def main(argv):
 			inputs2.append(int(line))
 
 	if len( inputs1 ) < n**2:
-		print "len(inputs1) = " + str(len(inputs1)) + " < " + str(n**2) + " = n^2"
+		print( "len(inputs1) = " + str(len(inputs1)) + " < " + str(n**2) + " = n^2" )
 	if len( inputs2 ) < n**2:
-		print "len(inputs2) = " + str(len(inputs2)) + " < " + str(n**2) + " = n^2"
+		print( "len(inputs2) = " + str(len(inputs2)) + " < " + str(n**2) + " = n^2" )
 
-	inputs = [x[0]^x[1] for x in zip(inputs1,inputs2)]
-	print "Input matrix : [ " + " ".join(map(str,inputs)) + " ]"
+	inputs = [x[0]^x[1] for x in zip(inputs1,inputs2)] #Output bits are XOR secret shared, so this reconstructs
+	print( "Input matrix : [ " + " ".join(map(str,inputs)) + " ]" )
 
 	outputs = clearing( inputs )
-	print "Output matrix : [ " + " ".join(map(str,outputs)) + " ]"
+	print( "Output matrix : [ " + " ".join(map(str,outputs)) + " ]" )
 
 if __name__ == "__main__":
 	main(sys.argv[1:])

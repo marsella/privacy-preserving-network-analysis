@@ -53,7 +53,7 @@ def test_EN(Pi,e,pbar):
 				Lambda[i][i] = 1
 
 	clearing = np.min( np.dot(PiT,p) + e, pbar )
-	if not np.isclose( clearing, p )
+	if not np.isclose( clearing, p ):
 		print( "ERROR: test_EN did not produce a clearing vector" )
 		for i in range(n):
 			print( f"Clearing[i] = {clearing[i]}" )
