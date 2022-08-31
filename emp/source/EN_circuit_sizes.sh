@@ -12,7 +12,8 @@ do
 	CIRCUITFILE="${n}.EN.circuit.txt"
 	#sed -i "s/int FixedP::denombits = [[:digit:]]\+;/int FixedP::denombits = $DLEN;/" ../test/EN.cpp
 	#sed -i "s/int FixedP::bitlen = [[:digit:]]\+;/int FixedP::bitlen = $BITLEN;/" ../test/EN.cpp
-
+	
+	echo "Generating the EN circuit for $n banks"
 	./bin/test_EN -m $n
 	num_gates=`head -n 1 $CIRCUITFILE | awk '{print $1}'`
 	num_ands=`grep AND $CIRCUITFILE | wc -l`

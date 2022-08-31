@@ -52,8 +52,8 @@ def test_EN(Pi,e,pbar):
 			if e[i] + (sum( [p[j]*Pi[j][i] for j in range(n)] )) < pbar[i]:
 				Lambda[i][i] = 1
 
-	clearing = np.min( np.dot(PiT,p) + e, pbar )
-	if not np.isclose( clearing, p ):
+	clearing = np.minimum( np.matmul(PiT,p)+e , pbar )
+	if not all( np.isclose( clearing, p ) ):
 		print( "ERROR: test_EN did not produce a clearing vector" )
 		for i in range(n):
 			print( f"Clearing[i] = {clearing[i]}" )
