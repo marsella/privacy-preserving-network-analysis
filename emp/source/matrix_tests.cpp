@@ -1,3 +1,8 @@
+/*
+Test suite for the matrix.h library that drives the matrix arithmetic in EN and EGJ
+*/
+
+
 #include "emp-sh2pc/emp-sh2pc.h"
 #include "math.h"
 #include "matrix.h"

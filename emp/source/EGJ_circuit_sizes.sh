@@ -12,8 +12,8 @@ do
 	#sed -i "s/int FixedP::denombits = [[:digit:]]\+;/int FixedP::denombits = $DLEGJ;/" ../test/EGJ.cpp
 	#sed -i "s/int FixedP::bitlen = [[:digit:]]\+;/int FixedP::bitlen = $BITLEGJ;/" ../test/EGJ.cpp
 
-	make
-	./bin/EGJ -m $n
+	echo "Generating the EGJ circuit for $n banks"
+	./EGJ -m $n
 	num_gates=`head -n 1 $CIRCUITFILE | awk '{print $1}'`
 	num_ands=`grep AND $CIRCUITFILE | wc -l`
 	rm $CIRCUITFILE
