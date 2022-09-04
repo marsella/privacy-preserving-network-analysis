@@ -32,7 +32,7 @@ $ ./benchmark.sh 1 1
 The parameters for `benchmark.sh` determine whether to use real (secure) data for the preprocessing and sacrifice phases. Briefly, the players need to have some coordinated data generated "offline" -- before they can run a computation. They can either have a trusted third party create it for them ("fake"), or generate it themselves ("real"). Generating it themselves is quite slow and takes a lot of resources; for testing this experiment, you might prefer to use "fake" data for efficiency, but we ran experiments with both real and fake offline data generation.
 As an example, running 6 players takes about 2 minutes with fake offline and sacrifice data, and 25 minutes (and a lot of RAM) with real data.
 
-You can change the program that is benchmarked by modifying line 10 (the options are `noe` or `egj`). You can change the number of players by modifying line 35. See Fig ?? for estimated time and RAM usage for more players.
+You can change the program that is benchmarked by modifying line 10 (the options are `noe` or `egj`). You can change the number of players by modifying line 35. See Fig 4 for estimated time and RAM usage for more players.
 
 ## Manually running the examples
 If you'd like to see the whole process, you can try running the examples manually.

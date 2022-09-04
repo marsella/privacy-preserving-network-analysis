@@ -52,14 +52,14 @@ def test_EN(Pi,e,pbar):
 			if e[i] + (sum( [p[j]*Pi[j][i] for j in range(n)] )) < pbar[i]:
 				Lambda[i][i] = 1
 
-	for i in range(n):
-		if np.absolute( p[i] - min( e[i] + (sum( [p[j]*Pi[j][i] for j in range(n)])), pbar[i]) ) > .0001: #.0001 is arbitrary, but you can't have actual equality because of errors in floats
-			print( "ERROR!" )
-			print( "sum( [p[j]*Pi[j][i] for j in range(n)] )= " + str( sum( [p[j]*Pi[j][i] for j in range(n)] )) )
+	clearing = np.minimum( np.matmul(PiT,p)+e , pbar )
+	if not all( np.isclose( clearing, p ) ):
+		print( "ERROR: test_EN did not produce a clearing vector" )
+		for i in range(n):
+			print( f"Clearing[i] = {clearing[i]}" )
+			print( f"p[i] = {p[i]}" )
 			print( "e[i] = " + str(e[i]) )
-			print( "p[i] = " + str(p[i]) )
 			print( "pbar[i] = " + str(pbar[i]) )
-			print( "e[i] + sum( [p[j]*Pi[j][i] for j in range(n)] ) = " + str( e[i] + ((sum( [p[j]*Pi[j][i] for j in range(n)] ))) ) )
 
 	#Write to output file
 	f = open("data/EN/%d.output.dat"%n, 'w')

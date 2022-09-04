@@ -2,7 +2,7 @@
 
 ## Dependencies
 
-This is C++11 software and requires a recent verison of `g++`. We used 9.4.0. It also uses GNU's `make`. We used version 4.2.1.
+This is C++11 software and requires a recent version of `g++`. We used 9.4.0. It also uses GNU's `make`. We used version 4.2.1.
 
 
 ## Get data

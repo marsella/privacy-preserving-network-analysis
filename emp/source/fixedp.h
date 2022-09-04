@@ -75,7 +75,7 @@ void FixedP::print() {
 	}
 
 	/*	
-	if( this->x.length < (int) sizeof(long) ) {
+	if( this->x.size() < (int) sizeof(long) ) {
 		double yy;
 		yy = (double) this->x.reveal<long>();
 		yy /= pow( 2, denombits );		
@@ -104,7 +104,7 @@ FixedP FixedP::operator-( const FixedP & rhs ) const {
 }
 
 FixedP FixedP::operator-() const {
-	Integer zero( this->x.length, 0, PUBLIC );
+	Integer zero( this->x.size(), 0, PUBLIC );
 	FixedP res( zero-this->x );
 	return( res );
 }
