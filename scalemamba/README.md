@@ -89,16 +89,32 @@ To generate the figures in our text, we first ran `benchmark.sh` for various num
 - `results`: Results of running `n`-party computations for EN and EGJ where every party is both a data owner and a participant. To replicate, run `benchmark.sh 1 1` without modification.
 - `batch_logs`: Results of changing the batch size for offline data computation. A given program requires a fixed amount of offline data. The data is generated in batches, so the number of rounds necessary to compute all the data will depend on the batch size. Here, we varied the batch size to compare offline data generation time to the default in `results`. To replicate, modify line 16 in `src/config.h` with the desired batch size (e.g. `#define sz_offline_batch 9000`). The default in `results` is 60000, and these were generated with 9000.
 - `ram_logs`: These measure `n`-party computations for EN with real and fake offline data (with the goal of measuring the RAM requirements of the two offline phases). To replicate, run `benchmark.sh <preprocessing> <sacrifice>` with different settings for offline data: `benchmark.sh 1 1` for both fake, `0 1` for real preprocessing and fake sacrifice, and `0 0` for both real.
-- `fixedparty-results`: Results of running the computation with varying computation parties but only one data owners (e.g. Player 0 provides input, but all others don't). To replicate, modify `geninput.py` to set `ONEPARTYINPUT = True`.
+- `fixedparty-results`: Results of running the EN computation with varying computation parties but only one data owners (e.g. Player 0 provides input, but all others don't). To replicate, modify `geninput.py` to set `ONEPARTYINPUT = True`.
 
-The file `visualize_benchmarks.py` parses these data to generate the figures used in the text. You can run it from your machine (e.g. not in the docker container).
+The file `visualize_benchmarks.py` parses these data to generate parsed data used to create figures used in the text. You can run it from your machine (e.g. not in the docker container).
 ```
 $ python3 visualize_benchmarks.py
 ```
-- To make Table ??, it parses the results and fixed-party results to measure the maximum time and maximum RAM consumed by any party in each computation for each algorithm. These results are written to CSVs in the `csv` directory and formatted in LaTeX to make the table.
+It generates several figures that we _didn't_ use in the text:
+- It parses the results and fixed-party results to measure the maximum time and maximum RAM consumed by any party in each computation for each algorithm. These results are written to CSVs in the `csv` directory and formatted in LaTeX to make the table.
+- It takes the same maximum time and RAM data for the standard `results` and plots it to `sm_ram.png` and `sm_time.png`. It also writes this data to `csv/scalemamba-EN.csv` and `csv/scalemamba-EGJ.csv`. (4a-b)
+- It measures time and RAM data for the varying `ram_logs` and plots it to `timing.png` and `ram.png`.
+- It measures time and RAM data for the `batch_logs` and plots it with the corresponding data from `results` in `batch_timing.png` and `batch_ram_usage.png`.
+- It parses the fixed-arty data into `csv/scalemamba-fixed.csv`
 
-- To make Fig ?? and ??, it takes the same maximum time and RAM data for the standard `results` and plots it to `sm_ram.png` and `sm_time.png`.
+The generated CSV files can be turned into the actual figures in the text using gnuplot. You'll need to copy the gnuplot file into the `csv` directory, then run it to get a bunch of `.tex`
+files. Compile any of them with pdflatex and open the resulting PDF with your favorite PDF viewer. `scalemamba_egj_runtime.tex` and `scalemamba_egj_ram.tex` produce Figure 4a and b. `scalemamba_runtime.tex` and `scalemamba_ram.tex` produce Figure 5a and b. 
 
-- To make Fig ?? and ??, it measures time and RAM data for the varying `ram_logs` and plots it to `timing.png` and `ram.png`.
-
-- To make Fig ?? and ??, it measures time and RAM data for the `batch_logs` and plots it with the corresponding data from `results` in `batch_timing.png` and `batch_ram_usage.png`.
+```
+$ cp scalemamba.plot csv
+$ cd csv
+$ gnuplot scalemamba.plot
+$ ls
+fit.log                     scalemamba_egj_runtime.aux                       scalemamba_egj_runtime.pdf  scalemamba.plot             scalemamba_runtime.tex
+scalemamba-EGJ.csv          scalemamba_egj_runtime-inc.eps                   scalemamba_egj_runtime.tex  scalemamba_ram-inc.eps
+scalemamba_egj_ram-inc.eps  scalemamba_egj_runtime-inc-eps-converted-to.pdf  scalemamba-EN.csv           scalemamba_ram.tex
+scalemamba_egj_ram.tex      scalemamba_egj_runtime.log                       scalemamba-fixed.csv        scalemamba_runtime-inc.eps
+$
+$ pdflatex scalemamba_egj_runtime.tex
+$ xdg-open scalemamba_egj_runtime.pdf
+```

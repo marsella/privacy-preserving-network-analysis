@@ -40,3 +40,9 @@ You'll need the following packages:
 ```
 $ pip install networkx matplotlib numpy
 ```
+
+### GNUPlot
+Some plots are generated with GNUPlot.
+```
+$ sudo apt-get install gnuplot-x11
+```
