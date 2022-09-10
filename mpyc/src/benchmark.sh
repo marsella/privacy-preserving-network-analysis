@@ -7,7 +7,7 @@
 TIME="/usr/local/bin/time -v"
 PROG=noe
 
-PYTHON="/usr/local/bin/python3"
+PYTHON="python3"
 #PYTHON="python"
 
 for BANK in `seq 2 9`
@@ -17,7 +17,7 @@ do
   $PYTHON egjdata.py $BANK
   pushd .
   cd ../../BIS/
-  python analyze.py -n $BANK -t 2
+  $PYTHON analyze.py -n $BANK -t 2
   popd
 
   # run two noe versions

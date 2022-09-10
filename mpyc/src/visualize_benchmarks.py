@@ -49,7 +49,7 @@ def plot_errors():
 
 # writes data to csvs to use in gnuplot
 def make_csvs(itrdata, invdata, egjdata):
-    with open("../../../figures/mpyc.runtime.csv", 'w') as f:
+    with open("csv/mpyc.runtime.csv", 'w') as f:
         f.write("n, iterative, inversion, egj\n")
         for (itr, inv, egj) in zip(itrdata, invdata, egjdata):
             assert itr.n_banks == inv.n_banks
@@ -57,7 +57,7 @@ def make_csvs(itrdata, invdata, egjdata):
             f.write("{},{},{},{}\n".format(itr.n_banks, itr.runtime_time, inv.runtime_time, egj.runtime_time))
 
     ramscale = 1000000 
-    with open("../../../figures/mpyc.ram.csv", 'w') as f:
+    with open("csv/mpyc.ram.csv", 'w') as f:
         f.write("n, iterative, inversion, egj\n")
         for (itr, inv,egj) in zip(itrdata, invdata, egjdata):
             assert itr.n_banks == inv.n_banks

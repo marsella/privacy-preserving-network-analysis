@@ -1,1 +1,4 @@
 mpyc/
+__pycache__
+csv/
+data/
